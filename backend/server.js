@@ -6,8 +6,6 @@ const games = require("./routes/games");
 const auth = require("./routes/auth");
 const posts = require("./routes/posts");
 const comments = require("./routes/comments");
-const products = require("./routes/product");
-const cart = require("./routes/cart");
 
 const app = express();
 
@@ -29,9 +27,6 @@ app.use("/api/games", games);
 app.use("/api/auth", auth);
 app.use("/api/posts", posts);  
 app.use("/api/comments", comments);
-app.use("/api/products", products);
-app.use("/api/cart", cart);
-// app.use("/api/favorites", require("./routes/favorites"));
 
 // Página 404 (agora só em JSON)
 app.use((req, res) => {

@@ -102,6 +102,17 @@ nav a:hover::after {
   width: 100%;
 }
 
+.logout-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 /* === TEXTO DO LOGO (se quiser adicionar) === */
 .logo-text {
   display: none; /* escondido inicialmente */

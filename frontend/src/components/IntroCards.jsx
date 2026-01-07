@@ -1,5 +1,5 @@
 import "./IntroCards.css";
-import { FaGamepad, FaStore, FaUsers, FaStar } from "react-icons/fa";
+import { FaGamepad, FaUsers, FaStar } from "react-icons/fa";
 
 export default function IntroCards() {
   return (
@@ -17,12 +17,6 @@ export default function IntroCards() {
           <FaGamepad className="card-icon" />
           <h3>Explorar Jogos</h3>
           <p>Descubra jogos incríveis de todos os estilos e plataformas.</p>
-        </div>
-
-        <div className="card">
-          <FaStore className="card-icon" />
-          <h3>Marketplace</h3>
-          <p>Compre, venda e troque itens com outros jogadores.</p>
         </div>
 
         <div className="card">
