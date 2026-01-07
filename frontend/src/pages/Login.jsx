@@ -37,12 +37,13 @@ export default function Login() {
       }
 
       // Salva o usuário no localStorage
+      localStorage.setItem("token", data.token);
       localStorage.setItem("user", JSON.stringify(data.user));
 
       console.log("Usuário logado:", data.user);
 
       // Redireciona para a comunidade
-      window.location.href = "/Comunidade";
+      window.location.href = "/comunidade";
 
     } catch (error) {
       console.error("Erro no login:", error);

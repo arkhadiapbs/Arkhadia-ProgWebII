@@ -1,5 +1,5 @@
 import "./Hero.css";
-import { FaStore, FaGamepad } from "react-icons/fa";
+import { FaGamepad } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
@@ -22,12 +22,6 @@ export default function Hero() {
             <FaGamepad /> Explorar agora
           </button>
 
-          <button 
-            className="btn-secondary"
-            onClick={() => navigate("/marketplace")}
-          >
-            <FaStore /> Ver lançamentos
-          </button>
         </div>
       </div>
     </section>

@@ -1,29 +1,27 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// Import das páginas
+// Páginas
 import Home from "./pages/Home";
 import Jogos from "./pages/Jogos";
-import Marketplace from "./pages/Marketplace";
 import Comunidade from "./pages/Comunidade";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
-// Import do Layout (Header + Footer)
+// Layout
 import Layout from "./components/Layout";
 
 import "./styles.css";
 
 function App() {
-  
   return (
     <Router>
       <Routes>
-        {/* 🔹 Páginas COM Header e Footer (usam Layout) */}
+        {/* Páginas COM Header e Footer */}
         <Route
           path="/"
           element={
             <Layout>
-              <Home /> 
+              <Home />
             </Layout>
           }
         />
@@ -38,15 +36,6 @@ function App() {
         />
 
         <Route
-          path="/marketplace"
-          element={
-            <Layout>
-              <Marketplace />
-            </Layout>
-          }
-        />
-
-        <Route
           path="/comunidade"
           element={
             <Layout>
@@ -55,7 +44,7 @@ function App() {
           }
         />
 
-        {/* 🔹 Páginas SEM Header e Footer */}
+        {/* Auth (sem layout) */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
