@@ -1,3 +1,64 @@
+# 🎮 Arkhadia
+
+Plataforma web voltada para a comunidade gamer, com foco em jogos, interação entre usuários e autenticação.
+
+Projeto desenvolvido para a disciplina de **Programação Web II**.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+### 🖥️ Frontend
+- React
+- React Router DOM
+- CSS
+- React Icons
+
+### 🧠 Backend
+- Node.js
+- Express
+- MongoDB
+- Mongoose
+- Bcrypt
+
+---
+
+## ✨ Funcionalidades
+
+- 🔐 Sistema de autenticação (Login e Cadastro)
+- 👥 Comunidade gamer
+- 🎮 Listagem e filtro de jogos
+- 👤 Controle de sessão (Login / Sair)
+- 🎨 Interface responsiva com tema escuro
+
+---
+
+## 📁 Estrutura do Projeto
+
+```bash
+📦 site
+├── 📂 backend
+│   ├── 📂 models
+│   ├── 📂 routes
+│   ├── 📄 server.js
+│   └── 📄 .env
+│
+├── 📂 frontend
+│   ├── 📂 public
+│   ├── 📂 src
+│   │   ├── 📂 assets
+│   │   ├── 📂 components
+│   │   ├── 📂 pages
+│   │   ├── 📂 services
+│   │   │   └── api.js
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── index.jsx
+│   │   ├── index.css
+│   │   └── styles.css
+└───── 
+````
+
 ## ⚙️ Como Rodar o Projeto
 
 ⚠️ **Atenção:** o backend deve estar rodando **antes** do frontend.
